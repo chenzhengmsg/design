@@ -1,5 +1,10 @@
 package cn.com.proxy1;
 
+/**
+ * 代理模式
+ * @author chenzheng
+ *
+ */
 public class ProxyPatternDemo {
 
 	public static void main(String[] args) {

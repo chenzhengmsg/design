@@ -3,6 +3,7 @@ package cn.com.proxyjdk;
 import java.lang.reflect.Proxy;
 
 /**
+ * jdk代理模式
  * 调用类
  * @author chenzheng
  *

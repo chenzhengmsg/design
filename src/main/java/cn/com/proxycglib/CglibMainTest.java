@@ -1,5 +1,10 @@
 package cn.com.proxycglib;
 
+/**
+ * cglib代理模式
+ * @author chenzheng
+ *
+ */
 public class CglibMainTest {
 
 	public static void main(String[] args) {
