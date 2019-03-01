@@ -15,10 +15,10 @@ public class CglibProxy implements MethodInterceptor {
 	}
 	
 
-	public Object intercept(Object obj, Method method, Object[] args, MethodProxy proxy) throws Throwable {
+	public Object intercept(Object obj, Method method, Object[] objects, MethodProxy proxy) throws Throwable {
 		// TODO Auto-generated method stub
 		System.out.println("###   before invocation");
-		Object result = method.invoke(target, obj);
+		Object result = method.invoke(target, objects);
 		
 		System.out.println("###   end invocation\"");
 		return result;
