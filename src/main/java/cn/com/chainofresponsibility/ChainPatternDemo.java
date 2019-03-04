@@ -10,12 +10,17 @@ package cn.com.chainofresponsibility;
 public class ChainPatternDemo {
 
 	private static AbstractLogger getChainOfLoggers() {
+		System.out.println("cz88888");//1
 		AbstractLogger errorLogger = new ErrorLogger(AbstractLogger.ERROR);
+		System.out.println("cz999999");//3
 	    AbstractLogger fileLogger = new FileLogger(AbstractLogger.DEBUG);
+	    System.out.println("czqqqqqqqq");//5
 	    AbstractLogger consoleLogger = new ConsoleLogger(AbstractLogger.INFO);
-	 
+	    System.out.println("czwwwwww");//7
 	    errorLogger.setNextLogger(fileLogger);
+	    System.out.println("czeeeeeee");//9
 	    fileLogger.setNextLogger(consoleLogger);
+	    System.out.println("czrrrrrr");//11
 	    return errorLogger;
 	}
 	
